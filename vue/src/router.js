@@ -7,6 +7,7 @@ import Users from './views/Users.vue'
 import Config from './views/Config.vue'
 import Limits from './views/Limits.vue'
 import Logs from './views/Logs.vue'
+import JobDetail from "./views/JobDetail";
 
 Vue.use(Router);
 
@@ -20,6 +21,11 @@ export default new Router({
             path: '/Jobs',
             name: 'Jobs',
             component: Jobs
+        },
+        {
+            path: '/Job/:jobId',
+            name: 'JobDetail',
+            component: JobDetail
         },
         {
             path: '/Queues',

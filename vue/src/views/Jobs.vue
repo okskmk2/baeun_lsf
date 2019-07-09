@@ -22,12 +22,13 @@ ko:
                 <button>{{$t('Settings')}}</button>
             </div>
         </div>
-        <hot-table :settings="settings" licenseKey="non-commercial-and-evaluation"></hot-table>
+        <hot-table :settings="settings" licenseKey="non-commercial-and-evaluation" ref="hot"></hot-table>
     </div>
 </template>
 
 <script>
     import {HotTable} from '@handsontable/vue';
+    import Handsontable from 'handsontable';
 
     export default {
         name: 'Jobs',
@@ -51,6 +52,16 @@ ko:
         },
         components: {
             HotTable
+        },
+        mounted(){
+            Handsontable.hooks.add('beforeOnCellMouseDown', (evt, coords)=>{
+                if( coords.row !== -1){
+                    if (coords.col === 0){
+                        let jobId = this.$refs.hot['hotInstance'].getDataAtCell(coords.row, coords.col);
+                        this.$router.push({ name: 'JobDetail', params: { jobId: jobId }})
+                    }
+                }
+            }, this.$refs.hot['hotInstance']);
         }
     }
 </script>

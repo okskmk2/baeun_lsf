@@ -1,0 +1,59 @@
+@primary-color: #113F67;
+@sub-color:#226597;
+
+#app{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#mid{
+  flex-grow: 1;
+}
+
+header, footer {
+  background-color: @primary-color;
+  color: #ffffff;
+}
+
+header {
+  padding: 11px 17px;
+  display: flex;
+  justify-content: space-between;
+  &>div{
+    display: inline-flex;
+    align-items: center;
+  }
+  .brand-text {
+    font-size: 30px;
+    margin-left: 14px;
+  }
+  [type=search]{
+    margin-left: 20px;
+    color:#ffffff;
+    border-radius: 4px;
+    padding:5px 10px;
+    width: 220px;
+    font-size: 20px;
+    border-style: none;
+    background-color: rgba(255,255,255,0.2);
+  }
+  .material-icons{
+    font-size: 30px;
+  }
+}
+
+button{
+  border-style: none;
+  background-color: @sub-color;
+  color: #ffffff;
+  border-radius: 4px;
+  &.big-btn{
+    font-size: 16px;
+    padding:6px 14px;
+  }
+}
+
+footer{
+  padding: 16px 17px;
+}

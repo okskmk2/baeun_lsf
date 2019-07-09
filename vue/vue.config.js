@@ -11,5 +11,6 @@ module.exports = {
         .use('yaml')
           .loader('yaml-loader')
           .end()
-    }
+    },
+    publicPath : '/baeun_lsf'
   }

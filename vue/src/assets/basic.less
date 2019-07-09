@@ -1,0 +1,55 @@
+@base-font-color:#222;
+
+body {
+    margin: 0;    
+    color: @base-font-color;
+    overflow-y: scroll;
+    font-family: sans-serif;
+    background-color: #fdfdfd;
+}
+
+header {
+    border-bottom: 1px solid #ddd;
+    background-color: #fefefe;
+    padding: 1rem 0;
+    nav {
+        &>a {
+            color: inherit;
+            font-size: 1rem;
+            padding: 1rem;
+            border-bottom: 3px solid transparent;
+            &:hover {
+                border-bottom: 3px solid lightgray;
+            }
+            &.router-link-active{
+                border-bottom: 3px solid orange;
+            }
+        }
+    }
+}
+
+nav {
+    &>a {
+        text-decoration: none;
+        white-space: nowrap;
+    }
+}
+
+footer {
+    margin-top: 2rem;
+    padding:2rem;
+    background-color: #e2e2e2;
+    font-size: 24px;
+}
+
+button {
+    white-space: nowrap;
+}
+
+select{
+    padding:1px 3px;
+}
+
+hr{
+    border: 1px solid #ddd;
+}

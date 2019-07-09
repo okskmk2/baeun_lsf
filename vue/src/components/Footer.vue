@@ -17,9 +17,3 @@
         components: {i18nChange}
     }
 </script>
-<style scoped>
-    footer {
-        margin-top: 2rem;
-    }
-
-</style>

@@ -5,6 +5,7 @@ import store from './store'
 import i18n from './i18n'
 import './assets/base.less';
 
+
 Vue.config.productionTip = false;
 
 new Vue({

@@ -20,6 +20,11 @@ en:
 </i18n>
 <script>
     export default {
-        name: "Header"
+        name: "Header",
+        mounted() {
+            document.querySelector('.menu-icon').addEventListener('click', ()=>{
+                document.querySelector('.gnb').classList.toggle('hide');
+            })
+        }
     }
 </script>

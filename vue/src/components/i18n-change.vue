@@ -1,7 +1,7 @@
 <template>
-<span>
-  <i class="fa fa-globe fa-fw" aria-hidden="true" style="font-size:21px;vertical-align: middle;"></i>
-  <select v-model="i18n.locale" @change="updateHtmlLang()">
+<span class="row-in ai-center">
+  <i class="material-icons">language</i>
+  <select v-model="i18n.locale" @change="updateHtmlLang()" style="margin-left: 6px">
     <option v-for="lang in support_langs" :key="lang">{{lang}}</option>
   </select>
 </span>

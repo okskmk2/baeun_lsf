@@ -2,8 +2,8 @@
     <div id="app">
         <Header></Header>
         <div id="mid">
-        <globalMenu class="gnb"></globalMenu>
-        <router-view/>
+            <globalMenu class="gnb"></globalMenu>
+            <router-view id="content"/>
         </div>
         <Footer></Footer>
     </div>

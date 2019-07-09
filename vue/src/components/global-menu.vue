@@ -1,34 +1,45 @@
 <template>
-  <nav>
-    <router-link to="/Profile">
-      <span>{{$t('Profile')}}</span>
-    </router-link>
-    <router-link to="/Portfolio">
-      <span>{{$t('Portfolio')}}</span>
-    </router-link>
-    <router-link to="/Blog">
-      <span>{{$t('Blog')}}</span>
-    </router-link>
-    <router-link to="/Contact">
-      <span>{{$t('Contact')}}</span>
-    </router-link>
-  </nav>
+    <nav>
+        <router-link to="/Jobs">
+            <span>{{$t('Jobs')}}</span>
+        </router-link>
+        <router-link to="/Queues">
+            <span>{{$t('Queues')}}</span>
+        </router-link>
+        <router-link to="/Hosts">
+            <span>{{$t('Hosts')}}</span>
+        </router-link>
+        <router-link to="/Users">
+            <span>{{$t('Users')}}</span>
+        </router-link>
+        <hr>
+        <router-link to="/Config">
+            <span>{{$t('Config')}}</span>
+        </router-link>
+        <router-link to="/Limits">
+            <span>{{$t('Limits')}}</span>
+        </router-link>
+        <router-link to="/Logs">
+            <span>{{$t('Logs')}}</span>
+        </router-link>
+    </nav>
 </template>
 
 <i18n>
 ko:
-  Profile: 프로필
-  Portfolio: 포트폴리오
-  Blog: 블로그
-  Contact: 의뢰하기
+    Jobs: 잡
+    Queues: 큐
+    Hosts: 호스트
+    Users: 사용자
+    Config: 환경설정
+    Limits: 한계설정
+    Logs: 로그
 en:
-  Profile: Profile
-  Portfolio: Portfolio
-  Blog: Blog
-  Contact: Contact
-zh:
-  Profile: 轮廓
-  Portfolio: Portfolio
-  Blog: Blog
-  Contact: Contact  
+    Jobs: Jobs
+    Queues: Queues
+    Hosts: Hosts
+    Users: Users
+    Config: Config
+    Limits: Limits
+    Logs: Logs
 </i18n>
